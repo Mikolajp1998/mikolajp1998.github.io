@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    width: 100%;
+    display: inline-flex;
+    
+}
+
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color:rgb(21, 21, 22);
+    color: rgb(255,255,255);
+}
+main{
+    margin-top: 20px;
+}
+
+/*styling the nav bar*/
+nav{
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 10px;
+    justify-content:right;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    z-index: 100;
+
+    
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(201, 200, 200);
+    font-size: large;
+}
+
+nav ul{
+    width:  50%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.about-me{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url(images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.about-me h1{
+    font-size: 40px;
+}
+.about-me p{
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 2px;   
+}  
+#about{
+    padding: 20px;
+    width: 100%;
+}
+.about-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.sil-container{
+    max-width: 500px;
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Images/ben-sweet-2LowviVHZ-E-unsplash.jpg);
+}
+#projects-title{
+    padding: 10px;
+    font-size: 54px;
+    background-color: white;
+    color:rgba(17, 16, 16, 0.6);
+
+}  
+.projects-container{
+    margin: 20px auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+}
+section h2, section p{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    align-content: center;
+    background-color: rgba(2, 2, 2, 0.9);
+}
+.carousel{
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slide{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.4s;
+    
+}
+.slide a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.slide section{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.controls .arrow{
+    position: absolute;
+    top:45%;
+    cursor: pointer;
+
+
+}
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+    right: 10px;
+}
+
+.arrow i{
+    font-size: 40px;
+    color: #ccc;
+    border-radius: 50%;
+    background-color: rgba(17, 16, 16, 0.6);}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(17, 16, 16, 0.6);
+    align-items: center;
+    background-color: white;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+#skills i{
+    font-size:26px;
+
+}
+#skills ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+#skills ul li{
+list-style-type: none;
+display: inline;
+width: 100%;
+}
+@media screen and (max-width: 800px){
+    #skills ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(17, 16, 16, 0.6);
+    align-items: center;
+    background-color: white;
+}
+.formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+  .bottom{
+    background-color: white;
+  }
+  .bottom h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(17, 16, 16, 0.6);
+    align-items: center;
+    background-color: white;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  #con{
+    box-shadow: 0 5px 5px 5px;
+  }
